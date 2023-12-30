@@ -24,3 +24,5 @@ jobs:
       - uses: jurplel/install-qt-action@v3.3.0
       - run: tools/release_fritzing.bat 0.10 64 2022
         shell: cmd
+        env:
+          QTBIN: "D:\\a\\fritzing-app\\Qt\\5.15.2\\msvc2019_64\\bin"
