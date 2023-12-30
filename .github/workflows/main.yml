@@ -25,10 +25,10 @@ jobs:
       - uses: TheMrMilchmann/setup-msvc-dev@v3.0.0
         with:
           arch: x64
-      - run: cmake .. -G "Visual Studio 17 2022" -A x64 -DBUILD_SHARED_LIBS=OFF -DBUILD_CLAR=OFF
-        working-directory: libgit2
+      - run: cmake . -G "Visual Studio 17 2022" -A x64 -DBUILD_SHARED_LIBS=OFF -DBUILD_CLAR=OFF
+        working-directory: "${{ github.workspace }}\\libgit2"
       - run: cmake --build . --config Release
-        working-directory: libgit2
+        working-directory: "${{ github.workspace }}\\libgit2"
   fritzing:
     runs-on: windows-2022
     needs:
