@@ -21,5 +21,5 @@ jobs:
       - uses: TheMrMilchmann/setup-msvc-dev@v3.0.0
         with:
           arch: x64
-      - run: tools/release_fritzing.bat
+      - run: tools/release_fritzing.bat 0.10 64 2022
         shell: cmd
