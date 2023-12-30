@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4.1.1
         with:
-          repository: "https://github.com/libgit2/libgit2"
+          repository: "libgit2/libgit2"
           ref: "v0.28.4"
           path: "libgit2"
       - uses: TheMrMilchmann/setup-msvc-dev@v3.0.0
